@@ -1,0 +1,120 @@
+2019-01-04 15:25:44,557 [NonParallelWorker] ERROR PMOTSTestAutomation.Pages.LogInPage - NUnit.Framework.AssertionException:   Expected string length 14 but was 15. Strings differ at index 14.
+  Expected: "Review Request"
+  But was:  "Review Requests"
+  -------------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.That.cs:line 247
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at PMOTSTestAutomation.Pages.LogInPage.ValidateMessage() in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Pages\LogInPage.cs:line 78
+2019-01-04 15:26:52,895 [NonParallelWorker] ERROR PMOTSTestAutomation.Pages.LogInPage - NUnit.Framework.AssertionException:   Expected string length 14 but was 15. Strings differ at index 14.
+  Expected: "Review Request"
+  But was:  "Review Requests"
+  -------------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.That.cs:line 247
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at PMOTSTestAutomation.Pages.LogInPage.ValidateMessage() in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Pages\LogInPage.cs:line 78
+2019-01-04 15:31:11,467 [NonParallelWorker] ERROR PMOTSTestAutomation.Pages.LogInPage - NUnit.Framework.AssertionException:   Expected string length 14 but was 15. Strings differ at index 14.
+  Expected: "Review Request"
+  But was:  "Review Requests"
+  -------------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.That.cs:line 247
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at PMOTSTestAutomation.Pages.LogInPage.ValidateMessage() in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Pages\LogInPage.cs:line 78
+2019-01-04 17:30:56,275 [NonParallelWorker] ERROR PMOTSTestAutomation.Pages.LogInPage - NUnit.Framework.AssertionException:   Expected string length 14 but was 15. Strings differ at index 14.
+  Expected: "Review Request"
+  But was:  "Review Requests"
+  -------------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.That.cs:line 247
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at PMOTSTestAutomation.Pages.LogInPage.ValidateMessage() in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Pages\LogInPage.cs:line 78
+2019-01-04 17:32:32,016 [NonParallelWorker] ERROR PMOTSTestAutomation.Pages.LogInPage - OpenQA.Selenium.WebDriverTimeoutException: Timed out after 10 seconds ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='content-label']"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7601 SP1 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at PMOTSTestAutomation.Pages.WebDriverExtensions.<>c__DisplayClass0_0.<FindElement>b__0(IWebDriver drv) in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Pages\LogInPage.cs:line 115
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   --- End of inner exception stack trace ---
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at PMOTSTestAutomation.Pages.WebDriverExtensions.FindElement(IWebDriver driver, By by, Int32 timeoutInSeconds) in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Pages\LogInPage.cs:line 115
+   at PMOTSTestAutomation.Pages.LogInPage.get_SuccessLogIn() in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Pages\LogInPage.cs:line 52
+   at PMOTSTestAutomation.Pages.LogInPage.ValidateMessage() in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Pages\LogInPage.cs:line 78
+2019-01-08 11:21:37,770 [NonParallelWorker] ERROR PMOTSTestAutomation.Pages.LogInPage - NUnit.Framework.AssertionException:   Expected string length 14 but was 15. Strings differ at index 14.
+  Expected: "Review Request"
+  But was:  "Review Requests"
+  -------------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.That.cs:line 247
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at PMOTSTestAutomation.Pages.LogInPage.ValidateMessage() in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Pages\LogInPage.cs:line 78
+2019-01-08 14:07:49,147 [NonParallelWorker] ERROR PMOTSTestAutomation.Tests.CrossBrowserTest - NUnit.Framework.AssertionException:   Expected string length 1 but was 0. Strings differ at index 0.
+  Expected: " "
+  But was:  <string.Empty>
+  -----------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.That.cs:line 247
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at PMOTSTestAutomation.Tests.CrossBrowserTest.Init() in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Tests\CrossBrowserTest.cs:line 51
+2019-01-10 14:07:24,792 [NonParallelWorker] ERROR PMOTSTestAutomation.Tests.CrossBrowserTest - System.NullReferenceException: Object reference not set to an instance of an object.
+   at PMOTSTestAutomation.Tests.CrossBrowserTest.Init() in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Tests\CrossBrowserTest.cs:line 59
+2019-01-10 16:40:43,621 [NonParallelWorker] ERROR PMOTSTestAutomation.Pages.LogInPage - NUnit.Framework.AssertionException:   Expected string length 14 but was 15. Strings differ at index 14.
+  Expected: "Review Request"
+  But was:  "Review Requests"
+  -------------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.That.cs:line 247
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at PMOTSTestAutomation.Pages.LogInPage.ValidateMessage() in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Pages\LogInPage.cs:line 78
+2019-01-10 16:40:51,642 [NonParallelWorker] ERROR PMOTSTestAutomation.Pages.LogInPage - NUnit.Framework.AssertionException:   Expected string length 14 but was 15. Strings differ at index 14.
+  Expected: "Review Request"
+  But was:  "Review Requests"
+  -------------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.That.cs:line 247
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at PMOTSTestAutomation.Pages.LogInPage.ValidateMessage() in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Pages\LogInPage.cs:line 78
+2019-01-10 16:44:48,603 [NonParallelWorker] ERROR PMOTSTestAutomation.Pages.LogInPage - NUnit.Framework.AssertionException:   Expected string length 14 but was 15. Strings differ at index 14.
+  Expected: "Review Request"
+  But was:  "Review Requests"
+  -------------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.That.cs:line 247
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at PMOTSTestAutomation.Pages.LogInPage.ValidateMessage() in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Pages\LogInPage.cs:line 78
+2019-01-10 16:44:56,698 [NonParallelWorker] ERROR PMOTSTestAutomation.Pages.LogInPage - NUnit.Framework.AssertionException:   Expected string length 14 but was 15. Strings differ at index 14.
+  Expected: "Review Request"
+  But was:  "Review Requests"
+  -------------------------^
+
+   at NUnit.Framework.Assert.ReportFailure(String message) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 394
+   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.cs:line 382
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.That.cs:line 247
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in C:\src\nunit\nunit\src\NUnitFramework\framework\Assert.Equality.cs:line 128
+   at PMOTSTestAutomation.Pages.LogInPage.ValidateMessage() in C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Pages\LogInPage.cs:line 78
