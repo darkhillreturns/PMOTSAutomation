@@ -27,35 +27,59 @@ namespace PMOTSTestAutomation.Tests
         IWebDriver maindriver;
         private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         private static string baseURL = ConfigurationManager.AppSettings["url"];
+        
         ExtentReports rep = ReportingManager.Instance();
+        ExtentTest test;
 
         //private static ReportingTasks test;
-        ExtentTest test;
 
         [SetUp]
         public void InitializeBrowser()
         {
             ExtentReports rep = ReportingManager.Instance();
             DisposeDriverService.TestRunStartTime = DateTime.Now;
+
             maindriver = new ChromeDriver();
             maindriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             maindriver.Navigate().GoToUrl(baseURL);
+
         }
-    
+
         #region Test Attributes
 
         [Test]
         public void LogInValidAdminAccount()
         {
+
             test = rep.CreateTest(TestContext.CurrentContext.Test.Name);
             test.Log(Status.Info, "Starting the Application Test");
 
             //test.InitializeTest();
-
             maindriver.Manage().Window.Maximize();
+
             LogInPage validAdmin = new LogInPage(maindriver);
             validAdmin.FilldatafromCsv();
-            ((ITakesScreenshot)maindriver).GetScreenshot().SaveAsFile(@"C:\Users\kkierulf\Documents\QA Projects\PMOTSTestAutomation\PMOTSTestAutomation\Screenshots\LogInScreen.jpeg" , ScreenshotImageFormat.Jpeg);
+
+            TakeScreenshot.CaptureScreenshot(maindriver, TestContext.CurrentContext.Test.Name);
+            
+        }
+
+
+        [Test]
+        public void Should_StayOnLoginPage_WhenNoLoginDetailsAreInputted()
+        {
+            test = rep.CreateTest(TestContext.CurrentContext.Test.Name);
+            test.Log(Status.Info, "Starting the Application Test");
+
+            LogInPage validAdmin = new LogInPage(maindriver);
+            maindriver.Manage().Window.Maximize();
+
+            validAdmin.ClickLogInBtn();
+            Assert.AreEqual(validAdmin.GetInvalidLoginErrorMessage(), "Invalid username or password.");
+            TakeScreenshot.CaptureScreenshot(maindriver, TestContext.CurrentContext.Test.Name);
+
+            Assert.IsTrue(validAdmin.IsAtPage());
+            Thread.Sleep(2000);
         }
 
         #endregion

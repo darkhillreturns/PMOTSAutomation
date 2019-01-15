@@ -110,6 +110,7 @@
     <Compile Include="Tests\CrossBrowserTest.cs" />
     <Compile Include="Tests\DisposeDriverService.cs" />
     <Compile Include="Tests\LogInTest.cs" />
+    <Compile Include="Tests\TakeScreenshot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="allureConfig.Template.json" />

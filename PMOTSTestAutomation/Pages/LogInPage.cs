@@ -52,6 +52,14 @@ namespace PMOTSTestAutomation.Pages
                 return this.driver.FindElement(By.XPath("//*[@class='content-label']"),10);
             }
         }
+
+        private IWebElement InvalidUsernamePasswordError
+        {
+            get
+            {
+                return this.driver.FindElement(By.XPath("//*[@class='kc-feedback-text']"), 10);
+            }
+        }
         #endregion
 
         #region LogInPage Methods
@@ -83,6 +91,17 @@ namespace PMOTSTestAutomation.Pages
                 Assert.Fail();
             }
         }
+
+        public bool IsAtPage()
+        {
+            return LogInBtn.Displayed;
+        }
+
+        public string GetInvalidLoginErrorMessage()
+        {
+            return InvalidUsernamePasswordError.Text;
+        }
+       
 
         public ReviewRequestsPage FilldatafromCsv()
         {

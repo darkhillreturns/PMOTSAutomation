@@ -14,7 +14,7 @@ namespace PMOTSTestAutomation.Pages
     public class ReportingTasks
     {
             private ExtentReports _extent;
-            private ExtentTest _test;
+            private ExtentTest test;
 
             public ReportingTasks(ExtentReports extentInstance)
             {
@@ -23,8 +23,14 @@ namespace PMOTSTestAutomation.Pages
 
             public void InitializeTest()
             {
-                _test = _extent.CreateTest(TestContext.CurrentContext.Test.Name);
-            
+                try
+                {
+                    test = _extent.CreateTest(TestContext.CurrentContext.Test.Name);
+                }
+                catch (Exception e)
+                {
+                    throw e;
+                }
             }
 
             public void FinalizeTest()
@@ -51,8 +57,8 @@ namespace PMOTSTestAutomation.Pages
                         logstatus = Status.Pass;
                         break;
                 }
-                _test.Log(logstatus, "Test ended with " + logstatus + stacktrace);
-                _extent.RemoveTest(_test);
+                test.Log(logstatus, "Test ended with " + logstatus + stacktrace);
+                _extent.RemoveTest(test);
             }
 
             public void CleanUpReporting()
